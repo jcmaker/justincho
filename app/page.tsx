@@ -14,12 +14,12 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen py-12">
-      <div className="container">
+    <div className="min-h-screen py-6 md:py-12">
+      <div className="max-w-[800px] mx-auto px-4 md:px-8">
         {/* Hero Section */}
-        <section className="mb-16">
-          <div className="flex items-start gap-4">
-            <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
+        <section className="mb-12 md:mb-16">
+          <div className="flex flex-col gap-3 md:flex-row md:items-start md:gap-4">
+            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden flex-shrink-0">
               <Image
                 src="/profile.jpeg"
                 alt="Justin Cho"
@@ -29,79 +29,78 @@ export default function Home() {
               />
             </div>
             <div className="flex-1">
-              <h1 className="text-4xl font-bold mb-2">Justin Cho</h1>
-              <p className="text-xl text-gray-400">
+              <h1 className="text-3xl md:text-4xl font-bold leading-tight">
+                Justin Cho
+              </h1>
+              <p className="mt-1 text-base md:text-xl text-gray-400">
                 Software Engineer based in Seoul, South Korea
               </p>
             </div>
           </div>
-          <p className="text-gray-300 mb-6 leading-relaxed mt-4">
+
+          <p className="text-gray-300 mt-4 mb-5 leading-relaxed text-pretty">
             I build clean, useful tools that turn small daily frictions into
             flow. My sweet spot is Next.js + Supabase + Tailwind, and I move
             fast—I prototype with intent, design with taste, and ship demos
-            people can evaluate immediately. On campus, I built a 3D-printer
-            status & reservation system used by ~400 students per semester,
-            letting students check remaining print time and enabling professors
-            to monitor issues in real time.
+            people can evaluate immediately.
           </p>
-          <p className="text-gray-400 mb-6">
+          <p className="text-gray-400 mb-4 md:mb-6">
             If you are hiring, reach out via email!
           </p>
 
-          <div className="flex gap-6 mb-6">
+          {/* touch-friendly social */}
+          <div className="flex gap-3 md:gap-6 mb-4 md:mb-6">
             <Link
+              aria-label="GitHub"
               href="https://github.com/jcmaker"
-              className="link flex items-center gap-2"
+              className="p-2.5 rounded-lg border border-white/10 text-foreground hover:bg-white/5 active:bg-white/10 transition"
             >
-              <Github size={16} />
-              GitHub
+              <Github size={22} />
             </Link>
             <Link
+              aria-label="LinkedIn"
               href="https://www.linkedin.com/in/justin-cho-39850a1b0/"
-              className="link flex items-center gap-2"
+              className="p-2.5 rounded-lg border border-white/10 text-foreground hover:bg-white/5 active:bg-white/10 transition"
             >
-              <Linkedin size={16} />
-              LinkedIn
+              <Linkedin size={22} />
             </Link>
             <Link
+              aria-label="Instagram"
               href="https://instagram.com/justinsta_627"
-              className="link flex items-center gap-2"
+              className="p-2.5 rounded-lg border border-white/10 text-foreground hover:bg-white/5 active:bg-white/10 transition"
             >
-              <Instagram size={16} />
-              Instagram
+              <Instagram size={22} />
+            </Link>
+            <Link
+              href="mailto:jcmaker0627@gmail.com"
+              className="p-2.5 rounded-lg border border-white/10 text-foreground hover:bg-white/5 active:bg-white/10 transition"
+            >
+              <Mail size={22} />
             </Link>
           </div>
-
-          <Link
-            href="mailto:jcmaker0627@gmail.com"
-            className="link text-gray-400 flex items-center gap-2 hover:text-gray-200 transition-colors"
-          >
-            <Mail size={16} />
-            jcmaker0627@gmail.com
-          </Link>
         </section>
 
         {/* Highlights Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-8">Highlights</h2>
+        <section className="mb-12 md:mb-16">
+          <h2 className="text-xl md:text-2xl font-bold mb-6 md:mb-8">
+            Highlights
+          </h2>
 
-          {/* youreview.me */}
           <div className="rounded-2xl border border-white/10 overflow-hidden">
-            <div className="relative h-48 md:h-64">
+            <div className="relative h-40 md:h-64 bg-white/5 p-2">
               <Image
                 src="/youreview_shot.png"
                 alt="YouReview"
                 fill
                 className="object-contain"
                 sizes="(min-width: 768px) 640px, 100vw"
-                priority
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">
+            <div className="p-5 md:p-6">
+              <h3 className="text-lg md:text-xl font-semibold mb-1.5">
                 YouReview — Rank & Share Culture
               </h3>
-              <p className="text-gray-400">
+              <p className="text-gray-400 text-sm md:text-base">
                 Rank and share your films, music, and books at{" "}
                 <a
                   className="underline underline-offset-4"
@@ -116,8 +115,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-white/10 overflow-hidden">
-            <div className="relative h-48 md:h-64">
+          <div className="mt-4 md:mt-6 rounded-2xl border border-white/10 overflow-hidden">
+            <div className="relative h-40 md:h-64 bg-white/5 p-2">
               <Image
                 src="/3dprinter_shot.png"
                 alt="3D Printer Management System"
@@ -126,11 +125,11 @@ export default function Home() {
                 sizes="(min-width: 768px) 640px, 100vw"
               />
             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">
+            <div className="p-5 md:p-6">
+              <h3 className="text-lg md:text-xl font-semibold mb-1.5">
                 3D Printer Management System
               </h3>
-              <p className="text-gray-400">
+              <p className="text-gray-400 text-sm md:text-base">
                 Built a campus-wide 3D printer status & reservation system used
                 by ~400 students per semester. Features real-time monitoring,
                 queue management, and professor dashboard for issue tracking.
@@ -140,126 +139,141 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-8">Projects</h2>
+        <section className="mb-12 md:mb-16">
+          <h2 className="text-xl md:text-2xl font-bold mb-6 md:mb-8">
+            Projects
+          </h2>
 
-          <div className="space-y-0">
-            <div className="project-item">
-              <div>
+          <div className="divide-y divide-[#333333]">
+            {/* row */}
+            <div className="py-3 md:py-4 md:hover:bg-white/5 md:hover:px-4 md:hover:-mx-4 md:hover:rounded transition">
+              <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                <div>
+                  <Link
+                    href="https://github.com/jcmaker/my-portfolio"
+                    className="underline text-foreground hover:text-[#888] font-medium inline-flex items-center gap-2"
+                  >
+                    Portfolio Website <ExternalLink size={14} />
+                  </Link>
+                  <p className="text-gray-400 text-sm mt-1">
+                    Modern portfolio built with Next.js and Tailwind
+                  </p>
+                </div>
                 <Link
-                  href="https://github.com/jcmaker/my-portfolio"
-                  className="link font-medium flex items-center gap-2"
+                  href="#"
+                  className="self-start md:self-auto inline-flex items-center gap-1 text-sm underline text-foreground hover:text-[#888]"
                 >
-                  Portfolio Website
-                  <ExternalLink size={14} />
+                  <Code2 size={14} /> code
                 </Link>
-                <p className="text-gray-400 text-sm mt-1">
-                  Modern portfolio built with Next.js and Tailwind
-                </p>
               </div>
-              <Link href="#" className="link text-sm flex items-center gap-1">
-                <Code2 size={14} />
-                code
-              </Link>
             </div>
 
-            <div className="project-item">
-              <div>
-                <span className="link font-medium flex items-center gap-2">
-                  Quest-On
-                </span>
-                <p className="text-gray-400 text-sm mt-1">
-                  AI Interactive Exam Platform
-                </p>
+            <div className="py-3 md:py-4 md:hover:bg-white/5 md:hover:px-4 md:hover:-mx-4 md:hover:rounded transition">
+              <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                <div>
+                  <span className="underline text-foreground hover:text-[#888] font-medium inline-flex items-center gap-2">
+                    Quest-On
+                  </span>
+                  <p className="text-gray-400 text-sm mt-1">
+                    AI Interactive Exam Platform
+                  </p>
+                </div>
+                {/* <Link href="#" className="self-start md:self-auto inline-flex items-center gap-1 text-sm underline text-foreground hover:text-[#888]">
+                  <Code2 size={14} /> code
+                </Link> */}
               </div>
-              {/* <Link href="#" className="link text-sm flex items-center gap-1">
-                <Code2 size={14} />
-                code
-              </Link> */}
             </div>
 
-            <div className="project-item">
-              <div>
+            <div className="py-3 md:py-4 md:hover:bg-white/5 md:hover:px-4 md:hover:-mx-4 md:hover:rounded transition">
+              <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                <div>
+                  <Link
+                    href="https://youreview.me"
+                    className="underline text-foreground hover:text-[#888] font-medium inline-flex items-center gap-2"
+                  >
+                    YouReview
+                    <ExternalLink size={14} />
+                  </Link>
+                  <p className="text-gray-400 text-sm mt-1">
+                    Rank and share your films, music, and books
+                  </p>
+                </div>
                 <Link
-                  href="https://youreview.me"
-                  className="link font-medium flex items-center gap-2"
+                  href="https://github.com/jcmaker/youreview"
+                  className="self-start md:self-auto inline-flex items-center gap-1 text-sm underline text-foreground hover:text-[#888]"
                 >
-                  YouReview
-                  <ExternalLink size={14} />
+                  <Code2 size={14} />
+                  code
                 </Link>
-                <p className="text-gray-400 text-sm mt-1">
-                  Rank and share your films, music, and books
-                </p>
               </div>
-              <Link
-                href="https://github.com/jcmaker/youreview"
-                className="link text-sm flex items-center gap-1"
-              >
-                <Code2 size={14} />
-                code
-              </Link>
             </div>
 
-            <div className="project-item">
-              <div>
-                <span className="link font-medium flex items-center gap-2">
-                  3D Printer Management System
-                </span>
-                <p className="text-gray-400 text-sm mt-1">
-                  Campus-wide 3D printer status & reservation system
-                </p>
+            <div className="py-3 md:py-4 md:hover:bg-white/5 md:hover:px-4 md:hover:-mx-4 md:hover:rounded transition">
+              <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                <div>
+                  <span className="underline text-foreground transition-colors duration-200 hover:text-[#888] font-medium flex items-center gap-2">
+                    3D Printer Management System
+                  </span>
+                  <p className="text-gray-400 text-sm mt-1">
+                    Campus-wide 3D printer status & reservation system
+                  </p>
+                </div>
+                <Link
+                  href="https://github.com/jcmaker/design3dprinter"
+                  className="self-start md:self-auto inline-flex items-center gap-1 text-sm underline text-foreground hover:text-[#888]"
+                >
+                  <Code2 size={14} />
+                  code
+                </Link>
               </div>
-              <Link
-                href="https://github.com/jcmaker/design3dprinter"
-                className="link text-sm flex items-center gap-1"
-              >
-                <Code2 size={14} />
-                code
-              </Link>
             </div>
           </div>
         </section>
 
         {/* Experience Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-8 flex items-center gap-2">
-            <Briefcase size={24} />
-            Experience
+        <section className="mb-12 md:mb-16">
+          <h2 className="text-xl md:text-2xl font-bold mb-6 md:mb-8 flex items-center gap-2">
+            <Briefcase size={22} className="md:size-6" /> Experience
           </h2>
 
           <div className="space-y-4">
-            <div className="experience-item">
-              <div className="flex items-center gap-2">
-                <Briefcase size={16} className="text-gray-400" />
-                <div>
-                  <span className="font-medium">CTO, Full-Stack Developer</span>
-                  <span className="text-gray-400"> — Startup Quest-On</span>
+            <div className="py-2">
+              <div className="flex flex-col gap-2 md:flex-row md:justify-between md:items-center">
+                <div className="flex items-start gap-2">
+                  <Briefcase size={16} className="text-gray-400 mt-0.5" />
+                  <div>
+                    <div className="font-medium">CTO, Full-Stack Developer</div>
+                    <div className="text-gray-400 text-sm md:text-base">
+                      Startup Quest-On
+                    </div>
+                  </div>
                 </div>
+                <span className="text-gray-400 text-sm flex items-center gap-1 ml-6 md:ml-0">
+                  <Calendar size={14} />
+                  Aug. 2025 - Present
+                </span>
               </div>
-              <span className="text-gray-400 text-sm flex items-center gap-1">
-                <Calendar size={14} />
-                Aug. 2025 - Present
-              </span>
             </div>
           </div>
         </section>
 
         {/* Awards Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-8 flex items-center gap-2">
-            <Award size={24} />
-            Awards
+        <section className="mb-12 md:mb-16">
+          <h2 className="text-xl md:text-2xl font-bold mb-6 md:mb-8 flex items-center gap-2">
+            <Award size={22} className="md:size-6" /> Awards
           </h2>
 
           <div className="space-y-4">
-            <div className="experience-item">
-              <div className="flex items-center gap-2">
-                <Award size={16} className="text-gray-400" />
-                <span className="font-medium">
-                  SNAAC (SNU) — Round 2 Advanced
-                </span>
+            <div className="py-2">
+              <div className="flex flex-col gap-2 md:flex-row md:justify-between md:items-center">
+                <div className="flex items-start gap-2">
+                  <Award size={16} className="text-gray-400 mt-0.5" />
+                  <span className="font-medium">
+                    SNAAC (SNU) — Round 2 Advanced
+                  </span>
+                </div>
+                <span className="text-gray-400 text-sm ml-6 md:ml-0">2025</span>
               </div>
-              <span className="text-gray-400 text-sm">2025</span>
             </div>
           </div>
         </section>
