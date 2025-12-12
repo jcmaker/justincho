@@ -20,6 +20,7 @@ import {
   Tilt,
   TiltContent,
 } from "@/components/animate-ui/primitives/effects/tilt";
+import { Magnetic } from "@/components/animate-ui/primitives/effects/magnetic";
 
 export default function Home() {
   return (
@@ -68,33 +69,41 @@ export default function Home() {
 
           {/* touch-friendly social */}
           <div className="flex gap-3 md:gap-6 mb-4 md:mb-6">
-            <Link
-              aria-label="GitHub"
-              href="https://github.com/jcmaker"
-              className="p-2.5 rounded-lg border border-white/10 text-foreground hover:bg-white/5 active:bg-white/10 transition"
-            >
-              <Github size={22} />
-            </Link>
-            <Link
-              aria-label="LinkedIn"
-              href="https://www.linkedin.com/in/justin-cho-39850a1b0/"
-              className="p-2.5 rounded-lg border border-white/10 text-foreground hover:bg-white/5 active:bg-white/10 transition"
-            >
-              <Linkedin size={22} />
-            </Link>
-            <Link
-              aria-label="Instagram"
-              href="https://instagram.com/justinsta_627"
-              className="p-2.5 rounded-lg border border-white/10 text-foreground hover:bg-white/5 active:bg-white/10 transition"
-            >
-              <Instagram size={22} />
-            </Link>
-            <Link
-              href="mailto:jcmaker0627@gmail.com"
-              className="p-2.5 rounded-lg border border-white/10 text-foreground hover:bg-white/5 active:bg-white/10 transition"
-            >
-              <Mail size={22} />
-            </Link>
+            <Magnetic strength={0.5} range={120} asChild>
+              <Link
+                aria-label="GitHub"
+                href="https://github.com/jcmaker"
+                className="p-2.5 rounded-lg border border-white/10 text-foreground hover:bg-white/5 active:bg-white/10 transition"
+              >
+                <Github size={22} />
+              </Link>
+            </Magnetic>
+            <Magnetic strength={0.5} range={120} asChild>
+              <Link
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/in/justin-cho-39850a1b0/"
+                className="p-2.5 rounded-lg border border-white/10 text-foreground hover:bg-white/5 active:bg-white/10 transition"
+              >
+                <Linkedin size={22} />
+              </Link>
+            </Magnetic>
+            <Magnetic strength={0.5} range={120} asChild>
+              <Link
+                aria-label="Instagram"
+                href="https://instagram.com/justinsta_627"
+                className="p-2.5 rounded-lg border border-white/10 text-foreground hover:bg-white/5 active:bg-white/10 transition"
+              >
+                <Instagram size={22} />
+              </Link>
+            </Magnetic>
+            <Magnetic strength={0.5} range={120} asChild>
+              <Link
+                href="mailto:jcmaker0627@gmail.com"
+                className="p-2.5 rounded-lg border border-white/10 text-foreground hover:bg-white/5 active:bg-white/10 transition"
+              >
+                <Mail size={22} />
+              </Link>
+            </Magnetic>
           </div>
         </section>
 
@@ -295,7 +304,8 @@ export default function Home() {
                       </li>
                       <li>
                         Delivered ~80% reduction in grading workload via
-                        automated scoring and rubric-based feedback
+                        automated scoring and rubric-based feedback (10 hrs → 2
+                        hrs)
                       </li>
                     </ul>
                   </div>
