@@ -10,7 +10,6 @@ import {
   Code2,
   Award,
   Briefcase,
-  Calendar,
   Mail,
 } from "lucide-react";
 import {
@@ -277,30 +276,26 @@ export default function Home() {
                       Quest-On — Co-Founder, CPO & Lead Engineer
                     </div>
                     <div className="text-gray-400 text-sm md:text-base mb-2">
-                      Seoul, Korea · Aug. 2025–Present
+                      Seoul, Korea · Aug 2025 – Present
                     </div>
                     <ul className="text-gray-300 text-sm md:text-base space-y-1.5 mt-2 list-disc list-inside">
                       <li>
-                        Designed and built the entire AI-powered assessment
-                        platform from scratch using Next.js, Supabase, Clerk
-                        Auth, and OpenAI API; delivered fully functional MVP
-                        within 3 months.
+                        Built full-stack AI powered assessment platform
+                        end-to-end (Next.js, Supabase, OpenAI), single-handedly
+                        launching MVP in 3 months.
                       </li>
                       <li>
-                        Architected 4-stage LLM interaction engine (Abstract
-                        Questioning → Clarification → Response Generation →
-                        AI-Guided Reflection) enabling real-time reasoning
-                        evaluation.
+                        Designed 4-stage LLM interaction engine for real-time
+                        reasoning evaluation.
                       </li>
                       <li>
-                        Led full technical architecture: DB schema design, API
-                        orchestration, LLM prompt engineering, role-based access
-                        (educator vs. student), and exam runtime engine.
+                        Elicited interests to Co-develop with 4 professors; ran
+                        2 live AI copilot exams with 20+ students without
+                        outbreak of errors
                       </li>
                       <li>
-                        Implemented auto-scoring pipeline and rubric-based
-                        feedback generation, significantly reducing instructors'
-                        grading workload.
+                        Delivered ~80% reduction in grading workload via
+                        automated scoring and rubric-based feedback
                       </li>
                     </ul>
                   </div>
@@ -322,7 +317,32 @@ export default function Home() {
                 <div className="flex items-start gap-2">
                   <Award size={16} className="text-gray-400 mt-0.5" />
                   <span className="font-medium">
-                    SNAAC (SNU) — Round 2 Advanced
+                    KoreaIT Academy — Web Service Development Competition 1st
+                    Place
+                  </span>
+                </div>
+                <span className="text-gray-400 text-sm ml-6 md:ml-0">2025</span>
+              </div>
+            </div>
+            <div className="py-2">
+              <div className="flex flex-col gap-2 md:flex-row md:justify-between md:items-center">
+                <div className="flex items-start gap-2">
+                  <Award size={16} className="text-gray-400 mt-0.5" />
+                  <span className="font-medium">
+                    SNAAC (Seoul National University Accelerator) — Advanced to
+                    Final Round (Pre–Demo Day)
+                  </span>
+                </div>
+                <span className="text-gray-400 text-sm ml-6 md:ml-0">2025</span>
+              </div>
+            </div>
+            <div className="py-2">
+              <div className="flex flex-col gap-2 md:flex-row md:justify-between md:items-center">
+                <div className="flex items-start gap-2">
+                  <Award size={16} className="text-gray-400 mt-0.5" />
+                  <span className="font-medium">
+                    Startup Express (Korea University) — Advanced to Final Round
+                    (Pre–Demo Day)
                   </span>
                 </div>
                 <span className="text-gray-400 text-sm ml-6 md:ml-0">2025</span>
