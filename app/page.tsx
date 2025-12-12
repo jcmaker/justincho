@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -11,6 +13,14 @@ import {
   Calendar,
   Mail,
 } from "lucide-react";
+import {
+  TypingText,
+  TypingTextCursor,
+} from "@/components/animate-ui/primitives/texts/typing";
+import {
+  Tilt,
+  TiltContent,
+} from "@/components/animate-ui/primitives/effects/tilt";
 
 export default function Home() {
   return (
@@ -30,7 +40,16 @@ export default function Home() {
             </div>
             <div className="flex-1">
               <h1 className="text-3xl md:text-4xl font-bold leading-tight">
-                Justin Cho
+                <TypingText
+                  text="Justin Cho"
+                  delay={500}
+                  inView={true}
+                  duration={100}
+                  loop={true}
+                  holdDelay={5000}
+                >
+                  <TypingTextCursor />
+                </TypingText>
               </h1>
               <p className="mt-1 text-base md:text-xl text-gray-400">
                 Software Engineer based in Seoul, South Korea
@@ -86,56 +105,65 @@ export default function Home() {
             Highlights
           </h2>
 
-          <div className="rounded-2xl border border-white/10 overflow-hidden">
-            <div className="relative h-40 md:h-64 bg-white/5 p-2">
-              <Image
-                src="/youreview_shot.png"
-                alt="YouReview"
-                fill
-                className="object-contain"
-                sizes="(min-width: 768px) 640px, 100vw"
-              />
-            </div>
-            <div className="p-5 md:p-6">
-              <h3 className="text-lg md:text-xl font-semibold mb-1.5">
-                YouReview — Rank & Share Culture
-              </h3>
-              <p className="text-gray-400 text-sm md:text-base">
-                Rank and share your films, music, and books at{" "}
-                <a
-                  className="underline underline-offset-4"
-                  href="https://youreview.me"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  youreview.me
-                </a>
-                .
-              </p>
-            </div>
-          </div>
+          <Tilt maxTilt={10} perspective={800}>
+            <TiltContent>
+              <div className="rounded-2xl border border-white/10 overflow-hidden">
+                <div className="relative h-40 md:h-64 bg-white/5 p-2">
+                  <Image
+                    src="/youreview_shot.png"
+                    alt="YouReview"
+                    fill
+                    className="object-contain"
+                    sizes="(min-width: 768px) 640px, 100vw"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <h3 className="text-lg md:text-xl font-semibold mb-1.5">
+                    YouReview — Rank & Share Culture
+                  </h3>
+                  <p className="text-gray-400 text-sm md:text-base">
+                    Rank and share your films, music, and books at{" "}
+                    <a
+                      className="underline underline-offset-4"
+                      href="https://youreview.me"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      youreview.me
+                    </a>
+                    .
+                  </p>
+                </div>
+              </div>
+            </TiltContent>
+          </Tilt>
 
-          <div className="mt-4 md:mt-6 rounded-2xl border border-white/10 overflow-hidden">
-            <div className="relative h-40 md:h-64 bg-white/5 p-2">
-              <Image
-                src="/3dprinter_shot.png"
-                alt="3D Printer Management System"
-                fill
-                className="object-contain"
-                sizes="(min-width: 768px) 640px, 100vw"
-              />
-            </div>
-            <div className="p-5 md:p-6">
-              <h3 className="text-lg md:text-xl font-semibold mb-1.5">
-                3D Printer Management System
-              </h3>
-              <p className="text-gray-400 text-sm md:text-base">
-                Built a campus-wide 3D printer status & reservation system used
-                by ~400 students per semester. Features real-time monitoring,
-                queue management, and professor dashboard for issue tracking.
-              </p>
-            </div>
-          </div>
+          <Tilt maxTilt={10} perspective={800}>
+            <TiltContent>
+              <div className="mt-4 md:mt-6 rounded-2xl border border-white/10 overflow-hidden">
+                <div className="relative h-40 md:h-64 bg-white/5 p-2">
+                  <Image
+                    src="/3dprinter_shot.png"
+                    alt="3D Printer Management System"
+                    fill
+                    className="object-contain"
+                    sizes="(min-width: 768px) 640px, 100vw"
+                  />
+                </div>
+                <div className="p-5 md:p-6">
+                  <h3 className="text-lg md:text-xl font-semibold mb-1.5">
+                    3D Printer Management System
+                  </h3>
+                  <p className="text-gray-400 text-sm md:text-base">
+                    Built a campus-wide 3D printer status & reservation system
+                    used by ~400 students per semester. Features real-time
+                    monitoring, queue management, and professor dashboard for
+                    issue tracking.
+                  </p>
+                </div>
+              </div>
+            </TiltContent>
+          </Tilt>
         </section>
 
         {/* Projects Section */}
