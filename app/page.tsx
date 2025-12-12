@@ -238,20 +238,45 @@ export default function Home() {
 
           <div className="space-y-4">
             <div className="py-2">
-              <div className="flex flex-col gap-2 md:flex-row md:justify-between md:items-center">
-                <div className="flex items-start gap-2">
-                  <Briefcase size={16} className="text-gray-400 mt-0.5" />
-                  <div>
-                    <div className="font-medium">CTO, Full-Stack Developer</div>
-                    <div className="text-gray-400 text-sm md:text-base">
-                      Startup Quest-On
+              <div className="flex flex-col gap-2 md:flex-row md:justify-between md:items-start">
+                <div className="flex items-start gap-2 flex-1">
+                  <Briefcase
+                    size={16}
+                    className="text-gray-400 mt-0.5 flex-shrink-0"
+                  />
+                  <div className="flex-1">
+                    <div className="font-medium">
+                      Quest-On — Co-Founder, CPO & Lead Engineer
                     </div>
+                    <div className="text-gray-400 text-sm md:text-base mb-2">
+                      Seoul, Korea · Aug. 2025–Present
+                    </div>
+                    <ul className="text-gray-300 text-sm md:text-base space-y-1.5 mt-2 list-disc list-inside">
+                      <li>
+                        Designed and built the entire AI-powered assessment
+                        platform from scratch using Next.js, Supabase, Clerk
+                        Auth, and OpenAI API; delivered fully functional MVP
+                        within 3 months.
+                      </li>
+                      <li>
+                        Architected 4-stage LLM interaction engine (Abstract
+                        Questioning → Clarification → Response Generation →
+                        AI-Guided Reflection) enabling real-time reasoning
+                        evaluation.
+                      </li>
+                      <li>
+                        Led full technical architecture: DB schema design, API
+                        orchestration, LLM prompt engineering, role-based access
+                        (educator vs. student), and exam runtime engine.
+                      </li>
+                      <li>
+                        Implemented auto-scoring pipeline and rubric-based
+                        feedback generation, significantly reducing instructors'
+                        grading workload.
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <span className="text-gray-400 text-sm flex items-center gap-1 ml-6 md:ml-0">
-                  <Calendar size={14} />
-                  Aug. 2025 - Present
-                </span>
               </div>
             </div>
           </div>
