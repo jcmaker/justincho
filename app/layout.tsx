@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/components/i18n/language-provider";
 
 const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
@@ -42,7 +43,7 @@ export default function RootLayout({
         className={`${robotoMono.variable} antialiased`}
         suppressHydrationWarning
       >
-        {children}
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );

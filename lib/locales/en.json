@@ -1,0 +1,72 @@
+{
+  "location": "Software Engineer based in Seoul, South Korea",
+  "hiring": "If you are hiring, reach out via email!",
+  "sections": {
+    "highlights": "Highlights",
+    "projects": "Projects",
+    "experience": "Experience",
+    "awards": "Awards"
+  },
+  "about": {
+    "lines": [
+      "I build product-quality demos that remove real friction—then I prove it with a live link.",
+      "My strength is turning messy requirements into clean systems: Next.js for fast shipping + UX/SEO, Supabase(Postgres) for reliable data + RLS, and Tailwind for consistent UI at speed.",
+      "I care less about listing features and more about why the product exists, what problem it solves, and what changed after shipping."
+    ]
+  },
+  "labels": {
+    "problem": "Problem:",
+    "solution": "Solution:",
+    "impact": "Impact:",
+    "demo": "Demo:",
+    "users": "Users:",
+    "keyDecision": "Key Decision:",
+    "result": "Result:",
+    "myRole": "My Role:"
+  },
+  "highlights": {
+    "questOn": {
+      "title": "Quest-On — AI Interactive Exam Platform",
+      "tagline": "Problem → Solution → Impact → Demo",
+      "problem": "Grading open-ended reasoning is slow and inconsistent.",
+      "solution": "Built an AI-assisted exam flow that captures clarification, feedback, and rubric-based scoring.",
+      "impact": "Reduced grading workload by ~80% (10 hrs → 2 hrs) through automated scoring + rubric feedback."
+    },
+    "printer": {
+      "title": "3D Printer Management System — Campus-wide Operations Tool",
+      "problem": "Students used printers without proper logging, and staff lacked real-time visibility & issue tracking.",
+      "solution": "Built a campus-wide status & reservation system with real-time monitoring, queue management, and a professor dashboard.",
+      "impact": "Used by ~400 students/semester; improved accountability and reduced \"unknown usage\" cases."
+    },
+    "youreview": {
+      "title": "YouReview — Rank & Share Culture",
+      "problem": "Personal rankings for films/music/books are scattered across notes and screenshots—hard to share and revisit.",
+      "solution": "Built a clean web app to rank, organize, and share lists publicly at youreview.me."
+    }
+  },
+  "awards": [
+    {
+      "name": "KoreaIT Academy — Web Service Development Competition 1st Place",
+      "year": "2025"
+    },
+    {
+      "name": "SNAAC (Seoul National University Accelerator) — Advanced to Final Round (Pre–Demo Day)",
+      "year": "2025"
+    },
+    {
+      "name": "Startup Express (Korea University) — Advanced to Final Round (Pre–Demo Day)",
+      "year": "2025"
+    }
+  ],
+  "experience": {
+    "questOnTitle": "Quest-On — Co-Founder, CPO & Lead Engineer",
+    "questOnWhen": "Seoul, Korea · Aug 2025 – Present",
+    "bullets": [
+      "Built and shipped a full-stack AI assessment platform end-to-end (Next.js, Supabase, OpenAI), launching an MVP in 3 months.",
+      "Reduced grading workload by ~80% (10 hrs → 2 hrs) by implementing rubric-based scoring and automated feedback generation.",
+      "Designed a 4-stage LLM interaction engine to evaluate reasoning in real time (clarification → guidance → draft → rubric feedback).",
+      "Ran 2 live AI copilot exams with 20+ students and maintained stable operation without major incidents; collaborated with 4 professors to align product and pedagogy."
+    ]
+  },
+  "live": "Live"
+}
