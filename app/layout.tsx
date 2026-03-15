@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Roboto_Mono } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/components/i18n/language-provider";
 
-const robotoMono = Roboto_Mono({
-  variable: "--font-roboto-mono",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -39,8 +40,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+        />
+      </head>
       <body
-        className={`${robotoMono.variable} antialiased`}
+        className={`${spaceGrotesk.variable} antialiased`}
         suppressHydrationWarning
       >
         <LanguageProvider>{children}</LanguageProvider>

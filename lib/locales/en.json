@@ -5,13 +5,13 @@
     "highlights": "Highlights",
     "projects": "Projects",
     "experience": "Experience",
-    "awards": "Awards"
+    "awards": "Awards",
+    "skills": "Skills"
   },
   "about": {
     "lines": [
-      "I build product-quality demos that remove real friction—then I prove it with a live link.",
-      "My strength is turning messy requirements into clean systems: Next.js for fast shipping + UX/SEO, Supabase(Postgres) for reliable data + RLS, and Tailwind for consistent UI at speed.",
-      "I care less about listing features and more about why the product exists, what problem it solves, and what changed after shipping."
+      "I ship fast, prove with live links, and measure by what changed — not what was built.",
+      "I'm drawn to the friction people tolerate daily — and I build to remove it."
     ]
   },
   "labels": {
@@ -47,7 +47,7 @@
   "awards": [
     {
       "name": "KoreaIT Academy — Web Service Development Competition 1st Place",
-      "year": "2025"
+      "year": "2019"
     },
     {
       "name": "SNAAC (Seoul National University Accelerator) — Advanced to Final Round (Pre–Demo Day)",
