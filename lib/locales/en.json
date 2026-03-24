@@ -46,6 +46,10 @@
   },
   "awards": [
     {
+      "name": "KTVF (Korea Technology Venture Foundation) — Selected as Top 12 Finalist for '2026 Startup Level Up Project'",
+      "year": "2026"
+    },
+    {
       "name": "KoreaIT Academy — Web Service Development Competition 1st Place",
       "year": "2019"
     },
@@ -59,13 +63,13 @@
     }
   ],
   "experience": {
-    "questOnTitle": "Quest-On — Co-Founder, CPO & Lead Engineer",
+    "questOnTitle": "Quest-On — Co-Founder, CTO & Lead Engineer",
     "questOnWhen": "Seoul, Korea · Aug 2025 – Present",
     "bullets": [
-      "Built and shipped a full-stack AI assessment platform end-to-end (Next.js, Supabase, OpenAI), launching an MVP in 3 months.",
-      "Reduced grading workload by ~80% (10 hrs → 2 hrs) by implementing rubric-based scoring and automated feedback generation.",
-      "Designed a 4-stage LLM interaction engine to evaluate reasoning in real time (clarification → guidance → draft → rubric feedback).",
-      "Ran 2 live AI copilot exams with 20+ students and maintained stable operation without major incidents; collaborated with 4 professors to align product and pedagogy."
+      "Spearheaded the technical delivery of a full-stack AI assessment SaaS, securing 2 confirmed academic pilot clients and launching a production-ready MVP within 3 months.",
+      "Architected a 4-stage LLM orchestration engine to evaluate complex reasoning in real-time; transitioned the system from a GPT-based demo to a scalable production infrastructure leveraging LangChain and AWS.",
+      "Successfully executed live AI-powered exams for academic institutions, maintaining zero-downtime operations and reducing grading workload by ~80% (10 hrs → 2 hrs) through automated rubric-based scoring.",
+      "Selected as Top 12 Finalist for '2026 Startup Level Up Project' by KTVF (Korea Technology Venture Foundation)."
     ]
   },
   "live": "Live"

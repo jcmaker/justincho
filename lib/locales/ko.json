@@ -46,6 +46,10 @@
   },
   "awards": [
     {
+      "name": "KTVF(Korea Technology Venture Foundation) — '2026 Startup Level Up Project' Top 12 Finalist 선정 (2026)",
+      "year": ""
+    },
+    {
       "name": "KoreaIT Academy — 웹서비스 개발 공모전 1위 (2019)",
       "year": ""
     },
@@ -59,13 +63,13 @@
     }
   ],
   "experience": {
-    "questOnTitle": "Quest-On — Co-Founder, CPO & Lead Engineer",
+    "questOnTitle": "Quest-On — Co-Founder, CTO & Lead Engineer",
     "questOnWhen": "Seoul, Korea · 2025.08 – Present",
     "bullets": [
-      "Next.js, Supabase, OpenAI 기반의 AI 시험/평가 플랫폼을 풀스택으로 구축하고 3개월 내 MVP 출시",
-      "루브릭 기반 채점 + 자동 피드백 생성으로 채점 시간을 약 80% 절감(10시간 → 2시간)",
-      "사고 과정을 실시간으로 평가하는 4단계 LLM 인터랙션 엔진 설계 (질문 → 가이드 → 초안 → 루브릭 피드백)",
-      "20명+ 학생 대상 라이브 시험 2회 운영, 큰 장애 없이 안정적으로 진행; 교수 4명과 공동 개발 논의 및 교육 목표 정렬"
+      "풀스택 AI 평가 SaaS의 기술 딜리버리를 주도해, 대학 기관 파일럿 고객 2곳을 확정하고 3개월 내 프로덕션 준비 수준의 MVP를 출시했습니다.",
+      "복합 사고력을 실시간으로 평가하는 4단계 LLM 오케스트레이션 엔진을 아키텍처링했으며, GPT 기반 데모에서 LangChain과 AWS를 활용한 확장 가능한 프로덕션 인프라로 전환했습니다.",
+      "학술기관 대상 라이브 AI 시험을 성공적으로 운영하며 무중단(Zero-downtime) 운영을 유지했고, 자동 루브릭 기반 채점으로 채점 업무를 약 80% 절감했습니다 (10시간 → 2시간).",
+      "KTVF(Korea Technology Venture Foundation) 주관 '2026 Startup Level Up Project' Top 12 Finalist에 선정되었습니다."
     ]
   },
   "live": "Live"
