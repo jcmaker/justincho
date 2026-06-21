@@ -10,12 +10,7 @@ export type Project = {
   result: string;
   demo: { live: string };
   role: string;
-  // Future fields for detail page
-  description?: string[];
-  features?: string[];
-  techStack?: string[];
   thumbnail?: string;
-  images?: string[];
 };
 
 export const getProjects = (language: Language): Project[] => {

@@ -2,7 +2,6 @@
   "location": "Software Engineer based in Seoul, South Korea",
   "hiring": "If you are hiring, reach out via email!",
   "sections": {
-    "highlights": "Highlights",
     "projects": "Projects",
     "experience": "Experience",
     "awards": "Awards",
@@ -16,9 +15,6 @@
   },
   "labels": {
     "problem": "Problem:",
-    "solution": "Solution:",
-    "impact": "Impact:",
-    "demo": "Demo:",
     "users": "Users:",
     "keyDecision": "Key Decision:",
     "result": "Result:",
@@ -27,22 +23,13 @@
   },
   "highlights": {
     "questOn": {
-      "title": "Quest-On — AI Interactive Exam Platform",
-      "tagline": "Problem → Solution → Impact → Demo",
-      "problem": "Grading open-ended reasoning is slow and inconsistent.",
-      "solution": "Built an AI-assisted exam flow that captures clarification, feedback, and rubric-based scoring.",
-      "impact": "Reduced grading workload by ~80% (10 hrs → 2 hrs) through automated scoring + rubric feedback."
+      "problem": "Grading open-ended reasoning is slow and inconsistent."
     },
     "printer": {
-      "title": "3D Printer Management System — Campus-wide Operations Tool",
-      "problem": "Students used printers without proper logging, and staff lacked real-time visibility & issue tracking.",
-      "solution": "Built a campus-wide status & reservation system with real-time monitoring, queue management, and a professor dashboard.",
-      "impact": "Used by ~400 students/semester; improved accountability and reduced \"unknown usage\" cases."
+      "problem": "Students used printers without proper logging, and staff lacked real-time visibility & issue tracking."
     },
     "youreview": {
-      "title": "YouReview — Rank & Share Culture",
-      "problem": "Personal rankings for films/music/books are scattered across notes and screenshots—hard to share and revisit.",
-      "solution": "Built a clean web app to rank, organize, and share lists publicly at youreview.me."
+      "problem": "Personal rankings for films/music/books are scattered across notes and screenshots—hard to share and revisit."
     }
   },
   "awards": [

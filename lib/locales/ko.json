@@ -2,7 +2,6 @@
   "location": "대한민국 서울에서 활동하는 소프트웨어 엔지니어",
   "hiring": "채용 중이라면 이메일로 연락 주세요!",
   "sections": {
-    "highlights": "하이라이트",
     "projects": "프로젝트",
     "experience": "경력",
     "awards": "수상",
@@ -16,9 +15,6 @@
   },
   "labels": {
     "problem": "문제(Problem):",
-    "solution": "해결(Solution):",
-    "impact": "성과(Impact):",
-    "demo": "데모(Demo):",
     "users": "사용자(Users):",
     "keyDecision": "핵심 선택(Key Decision):",
     "result": "결과(Result):",
@@ -27,40 +23,31 @@
   },
   "highlights": {
     "questOn": {
-      "title": "Quest-On — AI 인터랙티브 시험 플랫폼",
-      "tagline": "Problem → Solution → Impact → Demo",
-      "problem": "서술형·사고력 기반 답안을 채점하는 과정은 느리고, 평가 기준이 흔들리기 쉽습니다.",
-      "solution": "질문(clarification), 피드백, 루브릭 기반 채점을 포함한 AI 보조 시험 플로우를 구축했습니다.",
-      "impact": "자동 채점 + 루브릭 피드백으로 채점 시간을 약 80% 절감했습니다 (10시간 → 2시간)."
+      "problem": "서술형·사고력 기반 답안을 채점하는 과정은 느리고, 평가 기준이 흔들리기 쉽습니다."
     },
     "printer": {
-      "title": "3D Printer Management System — 캠퍼스 운영 도구",
-      "problem": "학생들이 로그를 제대로 남기지 않고 사용해 기록이 부정확했고, 운영 측은 실시간 현황/이슈를 파악하기 어려웠습니다.",
-      "solution": "실시간 모니터링, 대기열 관리, 교수자 대시보드를 포함한 캠퍼스 전체 3D 프린터 상태·예약 시스템을 구축했습니다.",
-      "impact": "학기당 약 400명이 사용했으며, 운영 책임성과 가시성이 개선되어 \"누가 썼는지 모르는 사용\" 사례가 감소했습니다."
+      "problem": "학생들이 로그를 제대로 남기지 않고 사용해 기록이 부정확했고, 운영 측은 실시간 현황/이슈를 파악하기 어려웠습니다."
     },
     "youreview": {
-      "title": "YouReview — 문화 취향 랭킹 & 공유",
-      "problem": "영화/음악/책 랭킹을 메모·스크린샷으로 흩어 관리하면 공유·회고가 어렵습니다.",
-      "solution": "랭킹을 정리하고 공개 링크로 공유할 수 있는 깔끔한 웹앱을 youreview.me에 구축했습니다."
+      "problem": "영화/음악/책 랭킹을 메모·스크린샷으로 흩어 관리하면 공유·회고가 어렵습니다."
     }
   },
   "awards": [
     {
-      "name": "KTVF(Korea Technology Venture Foundation) — '2026 Startup Level Up Project' Top 12 Finalist 선정 (2026)",
-      "year": ""
+      "name": "KTVF(Korea Technology Venture Foundation) — '2026 Startup Level Up Project' Top 12 Finalist 선정",
+      "year": "2026"
     },
     {
-      "name": "KoreaIT Academy — 웹서비스 개발 공모전 1위 (2019)",
-      "year": ""
+      "name": "KoreaIT Academy — 웹서비스 개발 공모전 1위",
+      "year": "2019"
     },
     {
-      "name": "SNAAC(서울대 액셀러레이터) — 최종 라운드 진출(Pre–Demo Day) (2025)",
-      "year": ""
+      "name": "SNAAC(서울대 액셀러레이터) — 최종 라운드 진출(Pre–Demo Day)",
+      "year": "2025"
     },
     {
-      "name": "Startup Express(고려대) — 최종 라운드 진출(Pre–Demo Day) (2025)",
-      "year": ""
+      "name": "Startup Express(고려대) — 최종 라운드 진출(Pre–Demo Day)",
+      "year": "2025"
     }
   ],
   "experience": {
