@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Justin Cho — Resume</title>
+    <style>
+      :root {
+        --ink: #14161a;
+        --muted: #555b66;
+        --line: #d9dde3;
+        --accent: #1a1a1a;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        font-family: -apple-system, "Helvetica Neue", Arial, "Apple SD Gothic Neo",
+          "Malgun Gothic", sans-serif;
+        color: var(--ink);
+        font-size: 10.5px;
+        line-height: 1.5;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        padding: 14mm 15mm;
+      }
+      header { border-bottom: 2px solid var(--accent); padding-bottom: 9px; margin-bottom: 12px; }
+      h1 { font-size: 24px; margin: 0 0 3px; letter-spacing: -0.3px; }
+      .role { font-size: 11.5px; color: var(--muted); font-weight: 600; margin: 0 0 6px; }
+      .contact { font-size: 9.5px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 10px; }
+      .contact a { color: var(--muted); text-decoration: none; }
+      .contact span.sep { color: var(--line); }
+      h2 {
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        color: var(--accent);
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 3px;
+        margin: 15px 0 8px;
+      }
+      .summary { color: var(--muted); margin: 0; }
+      .job { margin-bottom: 10px; }
+      .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+      .job-title { font-weight: 700; font-size: 11px; }
+      .job-meta { color: var(--muted); font-size: 9.5px; white-space: nowrap; }
+      ul { margin: 4px 0 0; padding-left: 15px; }
+      li { margin-bottom: 2.5px; }
+      .proj { margin-bottom: 7px; }
+      .proj-name { font-weight: 700; }
+      .proj-stack { color: var(--muted); }
+      .proj-link { color: var(--muted); font-size: 9px; }
+      .skills-grid { display: grid; grid-template-columns: 92px 1fr; gap: 3px 10px; }
+      .skills-grid .k { font-weight: 700; }
+      .skills-grid .v { color: var(--muted); }
+      .awards li { color: var(--ink); }
+      .awards .yr { display: inline-block; min-width: 34px; font-weight: 700; }
+      .two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 26px; }
+      @page { size: A4; margin: 0; }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Justin Cho</h1>
+        <p class="role">Software Engineer · Startup Co-Founder</p>
+        <div class="contact">
+          <span>Seoul, South Korea</span><span class="sep">|</span>
+          <a href="mailto:jcmaker0627@gmail.com">jcmaker0627@gmail.com</a><span class="sep">|</span>
+          <a href="https://github.com/jcmaker">github.com/jcmaker</a><span class="sep">|</span>
+          <a href="https://www.linkedin.com/in/justin-cho-39850a1b0/">linkedin.com/in/justin-cho</a><span class="sep">|</span>
+          <a href="https://justincho.vercel.app">justincho.vercel.app</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>Summary</h2>
+        <p class="summary">
+          Full-stack software engineer and startup co-founder. I ship fast, prove
+          with live links, and measure by what changed — not what was built. I work
+          end-to-end across AI/LLM product engineering, real-time web apps, mobile,
+          and embedded systems, and I'm drawn to the everyday friction people tolerate
+          — then I build to remove it.
+        </p>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <div class="job">
+          <div class="job-head">
+            <span class="job-title">Quest-On — Co-Founder, CTO &amp; Lead Engineer</span>
+            <span class="job-meta">Seoul, Korea · Aug 2025 – Present</span>
+          </div>
+          <ul>
+            <li>Spearheaded the technical delivery of a full-stack AI assessment SaaS, securing 2 confirmed academic pilot clients and launching a production-ready MVP within 3 months.</li>
+            <li>Architected a 4-stage LLM orchestration engine to evaluate complex reasoning in real time; transitioned the system from a GPT-based demo to scalable production infrastructure leveraging LangChain and AWS.</li>
+            <li>Executed live AI-powered exams for academic institutions with zero-downtime operations, reducing grading workload by ~80% (10 hrs → 2 hrs) through automated rubric-based scoring.</li>
+            <li>Selected as Top 12 Finalist for the '2026 Startup Level Up Project' by KTVF (Korea Technology Venture Foundation).</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Selected Projects</h2>
+        <div class="proj">
+          <span class="proj-name">GTEC Board</span> — Real-time, multi-tenant AI issue tracker (Linear-style).
+          <span class="proj-stack">Next.js, Convex (real-time sync + live presence), Clerk (auth + billing), Vercel AI SDK (org-scoped AI agent), Tailwind, PWA. Cmd+K command palette, drag-and-drop kanban, cycles.</span>
+          <span class="proj-link">github.com/jcmaker/GtecBoard</span>
+        </div>
+        <div class="proj">
+          <span class="proj-name">Quest-On</span> — AI interactive exam platform.
+          <span class="proj-stack">Next.js, Supabase (Postgres + Auth/RLS), LangChain, AWS.</span>
+          <span class="proj-link">quest-on.vercel.app</span>
+        </div>
+        <div class="proj">
+          <span class="proj-name">3D Printer Management System</span> — Campus-wide operations tool used by ~400 students/semester.
+          <span class="proj-stack">React, Next.js, real-time monitoring + queue + professor dashboard.</span>
+          <span class="proj-link">github.com/jcmaker/design3dprinter</span>
+        </div>
+        <div class="proj">
+          <span class="proj-name">Persona Engine</span> — Dockerized full-stack AI persona engine.
+          <span class="proj-stack">FastAPI + PostgreSQL + React/Three.js (3D) + nginx, orchestrated via Docker Compose.</span>
+          <span class="proj-link">github.com/jcmaker/persona-engine</span>
+        </div>
+        <div class="proj">
+          <span class="proj-name">ESP8266 Motor Web Control</span> — IoT firmware (C++) that serves a web UI to drive DC motors via PWM over a device-hosted Wi-Fi access point.
+          <span class="proj-link">github.com/jcmaker/esp8266-ap-dc-motor-web-control</span>
+        </div>
+      </section>
+
+      <div class="two">
+        <section>
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="k">Languages</div>
+            <div class="v">TypeScript, JavaScript, Python, Java, C/C++, SQL</div>
+            <div class="k">Frontend</div>
+            <div class="v">Next.js, React, React Native/Expo, TailwindCSS, shadcn/ui, Three.js</div>
+            <div class="k">Backend/Data</div>
+            <div class="v">Supabase, PostgreSQL, Convex, Prisma, FastAPI, Node.js</div>
+            <div class="k">AI/LLM</div>
+            <div class="v">OpenAI API, LangChain, Vercel AI SDK</div>
+            <div class="k">Infra/Tools</div>
+            <div class="v">Docker, AWS, Vercel, Git, Biome</div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Awards</h2>
+          <ul class="awards">
+            <li><span class="yr">2026</span> Top 12 Finalist, '2026 Startup Level Up Project' — KTVF</li>
+            <li><span class="yr">2025</span> Final Round, SNAAC (Seoul National University Accelerator)</li>
+            <li><span class="yr">2025</span> Final Round, Startup Express (Korea University)</li>
+            <li><span class="yr">2019</span> 1st Place, Web Service Development Competition — KoreaIT Academy</li>
+          </ul>
+
+          <h2>Education</h2>
+          <ul>
+            <li>KoreaIT Academy — Web Service Development (2019)</li>
+            <li>[University &amp; major — please confirm]</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
