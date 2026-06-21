@@ -37,8 +37,8 @@ export const getProjects = (language: Language): Project[] => {
         : "자동 채점 + 루브릭 피드백으로 채점 시간을 약 80% 절감 (10시간 → 2시간).",
       demo: { live: "https://quest-on.vercel.app" },
       role: en
-        ? "Co-Founder, CPO & Lead Engineer (end-to-end)."
-        : "공동창업자, CPO & 리드 엔지니어 (기획~개발~배포 E2E)",
+        ? "Co-Founder, CTO & Lead Engineer (end-to-end)."
+        : "공동창업자, CTO & 리드 엔지니어 (기획~개발~배포 E2E)",
     },
     {
       slug: "gtec-board",

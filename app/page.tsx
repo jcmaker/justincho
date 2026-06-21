@@ -76,7 +76,11 @@ export default function Home() {
 
             {/* Resume */}
             <a
-              href="/justin-cho-resume.pdf"
+              href={
+                language === "ko"
+                  ? "/justin-cho-resume-ko.pdf"
+                  : "/justin-cho-resume.pdf"
+              }
               target="_blank"
               rel="noreferrer"
               className="mt-5 inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-white/15 text-sm md:text-base text-gray-200 hover:bg-white/5 hover:border-white/25 transition"
