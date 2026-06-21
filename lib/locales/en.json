@@ -22,7 +22,8 @@
     "users": "Users:",
     "keyDecision": "Key Decision:",
     "result": "Result:",
-    "myRole": "My Role:"
+    "myRole": "My Role:",
+    "backToHome": "Back to Home"
   },
   "highlights": {
     "questOn": {

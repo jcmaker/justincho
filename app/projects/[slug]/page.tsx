@@ -1,10 +1,9 @@
 "use client";
 
-import * as React from "react";
+import { ArrowLeft, Globe } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useParams, notFound } from "next/navigation";
-import { ArrowLeft, Globe } from "lucide-react";
+import { notFound, useParams } from "next/navigation";
 import { useLanguage } from "@/components/i18n/language-provider";
 import { getProjects } from "@/lib/data";
 import { locales } from "@/lib/locales";
@@ -13,7 +12,7 @@ export default function ProjectDetail() {
   const params = useParams();
   const { language } = useLanguage();
   const t = locales[language];
-  
+
   const slug = params?.slug as string;
   const project = getProjects(language).find((p) => p.slug === slug);
 
@@ -29,15 +28,17 @@ export default function ProjectDetail() {
           className="inline-flex items-center text-gray-400 hover:text-foreground transition mb-8"
         >
           <ArrowLeft size={20} className="mr-2" />
-          Back to Home
+          {t.labels.backToHome}
         </Link>
-        
+
         <header className="mb-10">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">{project.name}</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            {project.name}
+          </h1>
           <p className="text-xl text-gray-300 mb-6">{project.outcome}</p>
-          
+
           <div className="flex flex-wrap gap-4">
-             {project.demo.live && (
+            {project.demo.live && (
               <a
                 href={project.demo.live}
                 target="_blank"
@@ -53,7 +54,7 @@ export default function ProjectDetail() {
 
         {project.thumbnail && (
           <div className="relative w-full h-64 md:h-96 mb-12 rounded-2xl overflow-hidden border border-white/10 bg-white/5">
-             <Image
+            <Image
               src={project.thumbnail}
               alt={project.name}
               fill
@@ -81,11 +82,15 @@ export default function ProjectDetail() {
 
           <section className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-gray-400">{t.labels.users}</h3>
+              <h3 className="text-lg font-semibold mb-2 text-gray-400">
+                {t.labels.users}
+              </h3>
               <p className="text-gray-300">{project.users}</p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-gray-400">{t.labels.myRole}</h3>
+              <h3 className="text-lg font-semibold mb-2 text-gray-400">
+                {t.labels.myRole}
+              </h3>
               <p className="text-gray-300">{project.role}</p>
             </div>
           </section>

@@ -1,9 +1,9 @@
 "use client";
 
+import { type HTMLMotionProps, motion } from "motion/react";
 import * as React from "react";
-import { motion, type HTMLMotionProps } from "motion/react";
 
-import { useIsInView, type UseIsInViewOptions } from "@/hooks/use-is-in-view";
+import { type UseIsInViewOptions, useIsInView } from "@/hooks/use-is-in-view";
 import { getStrictContext } from "@/lib/get-strict-context";
 
 type TypingTextContextType = {
@@ -41,7 +41,7 @@ function TypingText({
       inView,
       inViewOnce,
       inViewMargin,
-    }
+    },
   );
 
   const [isTyping, setIsTyping] = React.useState(false);

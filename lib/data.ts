@@ -1,4 +1,4 @@
-import { locales, type Language } from "@/lib/locales";
+import { type Language, locales } from "@/lib/locales";
 
 export type Project = {
   slug: string;
@@ -11,7 +11,7 @@ export type Project = {
   demo: { live: string };
   role: string;
   // Future fields for detail page
-  description?: string[]; 
+  description?: string[];
   features?: string[];
   techStack?: string[];
   thumbnail?: string;
@@ -20,7 +20,7 @@ export type Project = {
 
 export const getProjects = (language: Language): Project[] => {
   const t = locales[language];
-  
+
   const highlightLinks = {
     questOn: {
       live: "https://quest-on.vercel.app",
@@ -33,7 +33,7 @@ export const getProjects = (language: Language): Project[] => {
     },
     portfolio: {
       live: "",
-    }
+    },
   } as const;
 
   return [
@@ -62,7 +62,6 @@ export const getProjects = (language: Language): Project[] => {
         language === "en"
           ? "Co-Founder, CPO & Lead Engineer (end-to-end)."
           : "공동창업자, CPO & 리드 엔지니어 (기획~개발~배포 E2E)",
-      thumbnail: "/project-thumbnails/quest-on.png", // Placeholder path
     },
     {
       slug: "printer",
@@ -87,7 +86,7 @@ export const getProjects = (language: Language): Project[] => {
         language === "en"
           ? "Built end-to-end (full-stack)."
           : "풀스택으로 E2E 구축",
-      thumbnail: "/project-thumbnails/printer.png",
+      thumbnail: "/3dprinter_shot.png",
     },
     {
       slug: "youreview",
@@ -112,7 +111,7 @@ export const getProjects = (language: Language): Project[] => {
         language === "en"
           ? "Solo developer (product + design + engineering)."
           : "단독 개발(기획·디자인·개발).",
-      thumbnail: "/project-thumbnails/youreview.png",
+      thumbnail: "/youreview_shot.png",
     },
     {
       slug: "portfolio",
@@ -142,7 +141,6 @@ export const getProjects = (language: Language): Project[] => {
         language === "en"
           ? "Built and iterated independently."
           : "단독 제작 및 지속 개선",
-      thumbnail: "/project-thumbnails/portfolio.png",
     },
   ];
 };

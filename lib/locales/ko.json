@@ -22,7 +22,8 @@
     "users": "사용자(Users):",
     "keyDecision": "핵심 선택(Key Decision):",
     "result": "결과(Result):",
-    "myRole": "역할(My Role):"
+    "myRole": "역할(My Role):",
+    "backToHome": "홈으로 돌아가기"
   },
   "highlights": {
     "questOn": {
