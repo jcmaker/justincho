@@ -19,7 +19,8 @@
     "keyDecision": "핵심 선택(Key Decision):",
     "result": "결과(Result):",
     "myRole": "역할(My Role):",
-    "backToHome": "홈으로 돌아가기"
+    "backToHome": "홈으로 돌아가기",
+    "viewCode": "코드 보기"
   },
   "highlights": {
     "questOn": {
@@ -27,9 +28,6 @@
     },
     "printer": {
       "problem": "학생들이 로그를 제대로 남기지 않고 사용해 기록이 부정확했고, 운영 측은 실시간 현황/이슈를 파악하기 어려웠습니다."
-    },
-    "youreview": {
-      "problem": "영화/음악/책 랭킹을 메모·스크린샷으로 흩어 관리하면 공유·회고가 어렵습니다."
     }
   },
   "awards": [
@@ -60,5 +58,6 @@
       "KTVF(Korea Technology Venture Foundation) 주관 '2026 Startup Level Up Project' Top 12 Finalist에 선정되었습니다."
     ]
   },
-  "live": "Live"
+  "live": "Live",
+  "resume": "이력서"
 }

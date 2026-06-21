@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, Globe } from "lucide-react";
+import { ArrowLeft, Github, Globe } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -45,6 +45,17 @@ export default function ProjectDetail({ slug }: { slug: string }) {
               >
                 <Globe size={18} />
                 {t.live} Demo
+              </a>
+            )}
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 border border-white/15 text-foreground rounded-lg font-medium hover:bg-white/5 transition"
+              >
+                <Github size={18} />
+                {t.labels.viewCode}
               </a>
             )}
           </div>

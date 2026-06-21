@@ -19,7 +19,8 @@
     "keyDecision": "Key Decision:",
     "result": "Result:",
     "myRole": "My Role:",
-    "backToHome": "Back to Home"
+    "backToHome": "Back to Home",
+    "viewCode": "View Code"
   },
   "highlights": {
     "questOn": {
@@ -27,9 +28,6 @@
     },
     "printer": {
       "problem": "Students used printers without proper logging, and staff lacked real-time visibility & issue tracking."
-    },
-    "youreview": {
-      "problem": "Personal rankings for films/music/books are scattered across notes and screenshots—hard to share and revisit."
     }
   },
   "awards": [
@@ -60,5 +58,6 @@
       "Selected as Top 12 Finalist for '2026 Startup Level Up Project' by KTVF (Korea Technology Venture Foundation)."
     ]
   },
-  "live": "Live"
+  "live": "Live",
+  "resume": "Resume"
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+import { Download, Github, Instagram, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Magnetic } from "@/components/animate-ui/primitives/effects/magnetic";
@@ -73,6 +73,17 @@ export default function Home() {
             <p className="text-gray-400 mt-4 text-sm md:text-base">
               {t.hiring}
             </p>
+
+            {/* Resume */}
+            <a
+              href="/justin-cho-resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-5 inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-white/15 text-sm md:text-base text-gray-200 hover:bg-white/5 hover:border-white/25 transition"
+            >
+              <Download size={16} />
+              {t.resume}
+            </a>
 
             {/* Section navigation */}
             <nav className="mt-10 flex flex-col gap-4">
@@ -237,12 +248,20 @@ export default function Home() {
               {[
                 "Next.js",
                 "TypeScript",
-                "React Router",
-                "Supabase",
-                "FastAPI",
-                "Python",
-                "TailwindCSS",
                 "React",
+                "React Native / Expo",
+                "Python",
+                "FastAPI",
+                "Supabase",
+                "PostgreSQL",
+                "Convex",
+                "Prisma",
+                "OpenAI / LLM",
+                "Vercel AI SDK",
+                "Docker",
+                "TailwindCSS",
+                "Three.js",
+                "C/C++ (Embedded)",
               ].map((skill) => (
                 <span
                   key={skill}
