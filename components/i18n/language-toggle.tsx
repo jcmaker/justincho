@@ -1,7 +1,7 @@
 "use client";
 
-import { useLanguage } from "./language-provider";
 import { Switch } from "@/components/animate-ui/components/headless/switch";
+import { useLanguage } from "./language-provider";
 
 export function LanguageToggle() {
   const { language, setLanguage } = useLanguage();

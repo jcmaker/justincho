@@ -1,15 +1,18 @@
-'use client';
+"use client";
 
-import * as React from 'react';
 import {
+  type HTMLMotionProps,
   motion,
+  type SpringOptions,
   useMotionValue,
   useSpring,
-  type SpringOptions,
-  type HTMLMotionProps,
-} from 'motion/react';
+} from "motion/react";
+import * as React from "react";
 
-import { Slot, type WithAsChild } from '@/components/animate-ui/primitives/animate/slot';
+import {
+  Slot,
+  type WithAsChild,
+} from "@/components/animate-ui/primitives/animate/slot";
 
 type MagneticProps = WithAsChild<
   {
@@ -20,7 +23,7 @@ type MagneticProps = WithAsChild<
     onlyOnHover?: boolean;
     disableOnTouch?: boolean;
     ref?: React.Ref<HTMLElement>;
-  } & HTMLMotionProps<'div'>
+  } & HTMLMotionProps<"div">
 >;
 
 function Magnetic({
@@ -41,8 +44,8 @@ function Magnetic({
   React.useImperativeHandle(ref, () => localRef.current as HTMLDivElement);
 
   const isTouchDevice = React.useMemo(() => {
-    if (typeof window === 'undefined') return false;
-    return window.matchMedia('(pointer:coarse)').matches;
+    if (typeof window === "undefined") return false;
+    return window.matchMedia("(pointer:coarse)").matches;
   }, []);
 
   const [active, setActive] = React.useState(!onlyOnHover);
@@ -78,8 +81,8 @@ function Magnetic({
   React.useEffect(() => {
     if (disableOnTouch && isTouchDevice) return;
     const handle = (e: MouseEvent) => compute(e);
-    window.addEventListener('mousemove', handle);
-    return () => window.removeEventListener('mousemove', handle);
+    window.addEventListener("mousemove", handle);
+    return () => window.removeEventListener("mousemove", handle);
   }, [compute, disableOnTouch, isTouchDevice]);
 
   const Component = asChild ? Slot : motion.div;
@@ -87,7 +90,7 @@ function Magnetic({
   return (
     <Component
       ref={localRef}
-      style={{ display: 'inline-block', ...style, x, y }}
+      style={{ display: "inline-block", ...style, x, y }}
       onMouseEnter={(e: React.MouseEvent<HTMLDivElement>) => {
         if (onlyOnHover) setActive(true);
         onMouseEnter?.(e);

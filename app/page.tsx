@@ -1,27 +1,20 @@
 "use client";
 
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { Download, Github, Instagram, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
-import {
-  Github,
-  Linkedin,
-  Instagram,
-  Mail,
-} from "lucide-react";
+import Link from "next/link";
+import { Magnetic } from "@/components/animate-ui/primitives/effects/magnetic";
 import {
   TypingText,
   TypingTextCursor,
 } from "@/components/animate-ui/primitives/texts/typing";
-import { Magnetic } from "@/components/animate-ui/primitives/effects/magnetic";
-import { LanguageToggle } from "@/components/i18n/language-toggle";
 import { useLanguage } from "@/components/i18n/language-provider";
-import { locales } from "@/lib/locales";
+import { LanguageToggle } from "@/components/i18n/language-toggle";
 import { getProjects } from "@/lib/data";
+import { locales } from "@/lib/locales";
 
 export default function Home() {
   const { language } = useLanguage();
-  const router = useRouter();
 
   const t = locales[language];
   const projects = getProjects(language);
@@ -77,7 +70,24 @@ export default function Home() {
             </div>
 
             {/* Hiring */}
-            <p className="text-gray-400 mt-4 text-sm md:text-base">{t.hiring}</p>
+            <p className="text-gray-400 mt-4 text-sm md:text-base">
+              {t.hiring}
+            </p>
+
+            {/* Resume */}
+            <a
+              href={
+                language === "ko"
+                  ? "/justin-cho-resume-ko.pdf"
+                  : "/justin-cho-resume.pdf"
+              }
+              target="_blank"
+              rel="noreferrer"
+              className="mt-5 inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-white/15 text-sm md:text-base text-gray-200 hover:bg-white/5 hover:border-white/25 transition"
+            >
+              <Download size={16} />
+              {t.resume}
+            </a>
 
             {/* Section navigation */}
             <nav className="mt-10 flex flex-col gap-4">
@@ -164,21 +174,21 @@ export default function Home() {
 
             <div className="grid gap-5">
               {projects.map((p) => (
-                <div
+                <Link
                   key={p.name}
-                  onClick={() => router.push(`/projects/${p.slug}`)}
-                  className="group rounded-2xl border border-white/10 p-6 md:p-8 bg-white/[0.03] hover:bg-white/[0.07] transition cursor-pointer"
+                  href={`/projects/${p.slug}`}
+                  className="group block rounded-2xl border border-white/10 p-6 md:p-8 bg-white/[0.03] hover:bg-white/[0.07] transition cursor-pointer"
                 >
                   <p className="text-xs tracking-[0.2em] uppercase text-gray-500 mb-3">
                     {p.outcome}
                   </p>
                   <h3 className="text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors">
-                    <Link href={`/projects/${p.slug}`}>{p.name}</Link>
+                    {p.name}
                   </h3>
                   <p className="mt-3 text-gray-400 line-clamp-2 leading-relaxed">
                     {p.problem}
                   </p>
-                </div>
+                </Link>
               ))}
             </div>
           </section>
@@ -199,7 +209,9 @@ export default function Home() {
               <ul className="text-gray-300 text-sm md:text-base space-y-2 mt-2">
                 {t.experience.bullets.map((b) => (
                   <li key={b} className="flex gap-2">
-                    <span className="text-gray-600 flex-shrink-0 select-none">—</span>
+                    <span className="text-gray-600 flex-shrink-0 select-none">
+                      —
+                    </span>
                     <span>{b}</span>
                   </li>
                 ))}
@@ -240,12 +252,20 @@ export default function Home() {
               {[
                 "Next.js",
                 "TypeScript",
-                "React Router",
-                "Supabase",
-                "FastAPI",
-                "Python",
-                "TailwindCSS",
                 "React",
+                "React Native / Expo",
+                "Python",
+                "FastAPI",
+                "Supabase",
+                "PostgreSQL",
+                "Convex",
+                "Prisma",
+                "OpenAI / LLM",
+                "Vercel AI SDK",
+                "Docker",
+                "TailwindCSS",
+                "Three.js",
+                "C/C++ (Embedded)",
               ].map((skill) => (
                 <span
                   key={skill}

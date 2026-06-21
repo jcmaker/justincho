@@ -1,7 +1,9 @@
 "use client";
 
-import React, {
+import type React from "react";
+import {
   createContext,
+  useCallback,
   useContext,
   useEffect,
   useMemo,
@@ -51,14 +53,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     }
   }, [language]);
 
-  const setLanguage = (lang: Language) => {
+  const setLanguage = useCallback((lang: Language) => {
     setLanguageState(lang);
     try {
       window.localStorage.setItem(STORAGE_KEY, lang);
     } catch {
       // ignore
     }
-  };
+  }, []);
 
   const value = useMemo<LanguageContextValue>(
     () => ({
@@ -66,7 +68,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
       setLanguage,
       toggleLanguage: () => setLanguage(language === "en" ? "ko" : "en"),
     }),
-    [language]
+    [language, setLanguage],
   );
 
   return (
